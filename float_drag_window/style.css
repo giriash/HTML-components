@@ -1,0 +1,89 @@
+body{
+	top: 0px;
+	left: 0px;
+}
+.header{
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 80px;
+	background-color: #ddd;
+	color: #333;
+	position: fixed;
+	
+}
+
+.header .register-btn{
+	text-align: center;
+	min-width: 150px;
+	display: block;
+	float: right;
+	font-size: 20px;
+	line-height: 80px;
+}
+
+.content{
+	top: 80px;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+    height: 2000px;
+}
+.content p{
+	text-align: center;
+	width: 100%;
+}
+.content .float-block{
+	width: 350px;
+	position: fixed;
+	
+	top: 35%;
+	left: 35%;
+	z-index: 999;
+	border-radius: 10px;
+	border: 1px solid #333;
+	display: none;
+}
+
+.content .float-block .subheader{
+	padding: 0px 10px;
+	background-color: #ddd;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.content .float-block .subheader h1{
+    text-align: left;
+    font-size: 20px;
+    font-weight: normal;
+    display: block;
+    margin: 0px;
+    padding: 10px;
+}
+.content .float-block button{
+	border: 1px solid #ddd;
+	border-radius: 2px;
+}
+.content .float-block .subheader h1 .close-btn{
+	display: inline-block;
+	float: right;
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border-color: #333 !important;
+}
+
+.content .float-block input{
+	display: block;
+	margin: 15px auto;
+	width: 180px;
+	line-height: 20px;
+}
+
+.content .float-block .login-btn{
+	display: block;
+	margin: 15px auto;
+	width: 180px;
+	line-height: 20px;
+	background-color: #ddd;
+	color: #fff;
+}
