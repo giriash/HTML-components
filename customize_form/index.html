@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>customize form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="content">
+		<!-- show -->
+		<div class="show-block">
+			<h1>component show</h1>
+			<form class="" id="show_form">
+				<div id="show_name" class="show-name"></div>
+				<button type="button" id="submit_show_btn" class="show-submit-btn">submit</button>
+			</form>
+			
+		</div>
+		<!-- control  -->
+		<div class="control-block ">
+			<p>Customize your own form</p>
+			<fieldset class="cotrol-type" id="cotrol_type">
+				<legend>input type</legend>
+
+				<input class="clear" type="radio" name="data-type" id="type_input"> 
+				<label for="type_input">input box</label>
+				
+				<input class="clear" type="radio" name="data-type" id="type_choose_one"> 
+				<label for="type_choose_one">multiple choose (choose one)</label>
+				
+				<input class="clear" type="radio" name="data-type" id="type_choose_multiple"> 
+				<label for="type_choose_multiple">multiple choose (choose any)</label>
+				
+				<input class="clear" type="radio" name="data-type" id="type_select"> 
+				<label for="type_select">select menu</label>
+
+				<input class="clear" type="radio" name="data-type" id="type_text"> 
+				<label for="type_text">textarea</label>
+			</fieldset>
+				<!-- sub-settings -->
+				<form>
+					<fieldset class="cotrol-type-text" id="cotrol_type_text">
+							<legend>input box type</legend>
+
+							<input class="clear" type="radio" name="data-type" id="type_input_text"> 
+							<label for="type_input_text">text</label>
+							
+							<input class="clear" type="radio" name="data-type" id="type_input_password"> 
+							<label for="type_input_password">password</label>
+							
+							<input class="clear" type="radio" name="data-type" id="type_input_email"> 
+							<label for="type_input_email">email</label>
+							
+							<input class="clear" type="radio" name="data-type" id="type_input_phone"> 
+							<label for="type_input_phone">phone</label>
+					</fieldset>
+				</form>
+
+				<!-- for multiple choice (singel) -->
+				<div>
+					<fieldset class="cotrol-type-choice" id="cotrol_type_choice">
+							<legend>input your chooses</legend>
+
+							<div>
+								<label>choice: </label>
+								<input type="text" name="choice" id="cotrol_type_choice_input">
+								<button id="cotrol_type_choice_button">add</button>
+							</div>
+
+							<div class = "cotrol-type-choice-show" id="cotrol_type_choice_show">
+								
+							</div>
+					</fieldset>
+				</div>
+				<!-- for multiple choice (multiple) -->
+				<div>
+					<fieldset class="cotrol-type-choice" id="cotrol_type_choice2">
+							<legend>input your chooses</legend>
+
+							<div>
+								<label>choice: </label>
+								<input type="text" name="choice" id="cotrol_type_choice_input2">
+								<button id="cotrol_type_choice_button2">add</button>
+							</div>
+
+							<div class = "cotrol-type-choice-show" id="cotrol_type_choice_show2">
+								
+							</div>
+					</fieldset>
+				</div>
+				<!-- for drag menu -->
+				<div>
+					<fieldset class="cotrol-type-choice" id="cotrol_type_choice3">
+							<legend>input your chooses</legend>
+
+							<div>
+								<label>choice: </label>
+								<input type="text" name="choice" id="cotrol_type_choice_input3">
+								<button id="cotrol_type_choice_button3">add</button>
+							</div>
+
+							<div class = "cotrol-type-choice-show" id="cotrol_type_choice_show3">
+								
+							</div>
+					</fieldset>
+				</div>
+
+
+
+			<fieldset class="cotrol-settings" id="control_settings">
+				<legend>input settings</legend>
+				<label for="set_name" class="label_name">name: &nbsp</label>
+				<input type="text" id="set_name" value="" name="data-settings">
+
+				<form id="control_necessary">
+					<input class="clear" type="radio" name="data-settings" id="set_required" checked> 
+					<label for="set_required">required</label>
+					
+					<input type="radio" name="data-settings" id="set_not_required"> 
+					<label for="set_not_required" >not required</label>
+				</form>
+				<form>
+					<input class="clear" type="radio" name="data-settings" id="set_style1" checked> 
+					<label for="set_style1">style1</label>
+					
+					<input type="radio" name="data-settings" id="set_style2"> 
+					<label for="set_style2">style2</label>
+				</form>
+				
+
+			</fieldset>
+			<div class="submit-btn">
+				<button id="submit_btn">submit</button>
+
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../public.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

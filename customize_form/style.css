@@ -1,0 +1,137 @@
+body{
+
+}
+.check{
+	border: 1px solid red;
+}
+
+.content{
+	display: flex;
+}
+.clear{
+	clear: both;
+}
+
+/**************************
+******show block style*****
+***************************/
+.show-block{
+	flex: none;
+	width: 70%;
+}
+.show-block h1{
+	font-size: 20px;
+	text-align: center;
+}
+.show-block form{
+	width: 50%;
+	margin: 30px auto 10px;
+}
+.show-name{
+	margin: 0px auto;
+	text-align: center;
+}
+.show-submit-btn{
+	clear: both;
+	display: none;
+	margin: 50px auto 0px;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(59,153,252);
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    outline: none;
+
+}
+.show-block label{
+	float: left;
+    display: inline-block;
+    clear: both;
+    line-height: 60px;
+}
+.show-block input[type='text'],input[type='password'],input[type='email'],input[type='tel']{
+	width: 80%;
+    height: 30px;
+    outline: none;
+    border: 1px solid rgb(199,199,199);
+    border-radius: 8px;
+    margin-top: 10px;
+    float: right;
+}
+.show-block input[type='textarea']{
+	width: 80%;
+    height: 100px;
+    outline: none;
+    border: 1px solid rgb(199,199,199);
+    border-radius: 8px;
+    margin: 10px auto;
+    float: right;
+}
+.show-block .multipleChooseSingle{
+	margin-right: 10px;
+	display: block;
+	clear: both;
+	/*position: absolute;
+	left: 0px;*/
+}
+.show-block .multipleChooseSingle label{
+	float: none;
+	line-height: 30px;
+}
+.show-block select{
+	clear: both;
+	line-height: 60px;
+	display: block;
+}
+/**************************
+****control block style****
+***************************/
+.control-block{
+	flex: 1;
+}
+.submit-btn{
+	width: 100%;
+	text-align: center;
+	margin: 0px auto 10px;
+}
+.control-block fieldset{
+	line-height: 22px;
+	margin-bottom: 20px;
+}
+
+.control-block fieldset legend{
+	text-transform: capitalize;
+}
+
+.cotrol-type input{
+	margin: 5px 10px;
+	display: inline-block;
+	float: left;
+}
+.cotrol-type label{
+	display: inline-block;
+	float: left;
+}
+.cotrol-type-text {
+	display: none;
+}
+.cotrol-type-choice{
+	display: none;
+}
+.cotrol-settings label{
+	min-width: 80px;
+	display: inline-block;
+	float: left;
+}
+.label_name{
+	min-width: 30px !important;
+}
+.cotrol-settings input{
+	display: inline-block;
+	float: left;
+}
+.control-block p{
+	text-align: center;
+}
