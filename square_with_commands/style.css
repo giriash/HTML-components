@@ -1,0 +1,116 @@
+.content {
+	display: flex;
+}
+
+.table-container{
+	flex: none;
+	width: 50%;
+}
+
+.control-container{
+	flex: 1;
+	padding-top: 50px;
+	position: relative;
+}
+.control-container p{
+	font-size: 12px;
+	line-height: 20px;
+	margin: 0px;
+}
+/*table style*/
+.my-table {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: #fff;
+	border-spacing:0;
+    border-collapse:collapse;
+    background-color:transparent;
+}
+
+.my-table td{
+	width: 49px;
+	height: 49px;
+	padding: 0px;
+	margin: 0px;
+	border: 1px solid #aaa;
+    text-align:center;
+    font-weight: bold;
+}
+
+.my-table td:first-child{
+	border: 1px solid white;
+	border-right: 1px solid black;
+}
+.my-table td:last-child{
+	border-right: 1px solid black;
+}
+.my-table tr:first-child td{
+	border: 1px solid white;
+	border-bottom: 1px solid black;
+}
+.my-table tr:last-child td{
+	border-bottom: 1px solid black;
+}
+.my-table tr:first-child td:first-child{
+	border: 1px solid white;
+	/*border: none;*/
+}
+.my-table tr:last-child td:first-child{
+	border-right: 1px solid black !important;
+	border: 1px solid white;
+}
+
+/*.table-container tr:nth-child(5) td:nth-child(5){
+
+}*/
+/*command style*/
+.commant-container{
+	width: 300px;
+	display: flex;
+
+}
+.commant-col{
+	flex:none;
+	width: 20px;
+	height: 200px;
+	padding: 3px 0px;
+	background-color: #ccc;
+	color: white;
+	font-size: 20px;
+	line-height: 20px;
+	overflow: hidden;
+}
+.commant-input{
+	flex:1;
+	height: 200px;
+	background-color: black;
+	color: green;
+	font-size: 20px;
+	line-height: 20px;
+	overflow-y: scroll;
+}
+/*square style*/
+.square{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 250px;
+	left: 250px;
+	background: red;
+	z-index: 999;
+	transition: 1s all;
+	-webkit-transition: 1s all;
+	-ms-transition: 1s all;
+	-moz-transition: 1s all;
+
+}
+
+.square:after{
+	position: absolute;
+	content: "";
+	width: 50px;
+	display: block;
+	height: 10px;
+	background-color: blue;
+}

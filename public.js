@@ -18,3 +18,11 @@ function removeEvent(ele, event, hanlder) {
         ele['on' + event] = null;
     }
 }
+
+//clean nodes
+function removeChildrenNodes(ele){
+    while (ele.firstChild) {
+        ele.removeChild(ele.firstChild);
+    }
+}
+

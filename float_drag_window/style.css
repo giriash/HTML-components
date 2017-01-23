@@ -36,7 +36,6 @@ body{
 .content .float-block{
 	width: 350px;
 	position: fixed;
-	
 	top: 35%;
 	left: 35%;
 	z-index: 999;

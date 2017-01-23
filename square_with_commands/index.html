@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mission 36</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="content">
+		<div class="table-container">
+			<table id="table_container" class = "my-table">
+				<!-- <tbody id="table_body"></tbody> -->
+			</table>
+			<div id="square" class="square"></div>
+		</div>
+		
+		<div class="control-container" id="button_list">
+			
+			
+			<div class="commant-container">
+				<div class="commant-col" id="command_col" ></div>
+				<textarea class="commant-input" id="command_input"></textarea>
+			</div>
+			<button id="do_btn">EXEC</button>
+			<button id="refresh_btn">Refresh</button>
+			<button id="random_btn">random wall</button>
+			<br>
+			<h5>Using following commmands to control the square: </h5>
+			<p>GO # : move the block # steps following current direction. example: GO 3</p>
+			<p>TUN LEF # : change the direction to left #times, example: TUN LEF</p>
+			<p>TUN RIG # : change the direction to right #times, example: TUN RIG</p>
+			<p>TUN BAC # : change the diraction to back #times, example: TUN BAC</p>
+			<p>TRA LEF # : move the block to left without changing direction, example: TRA LEF 2</p>
+			<p>TRA RIG # : move the block to right without changing direction, example: TRA RIG 2</p>
+			<p>TRA BOT # : move the block to bottom without changing direction, example: TRA BOT 2</p>
+			<p>TRA TOP # : move the block to top AND change the direction, example: TRA TOP 2</p>
+			<p>MOV LEF # : move the block to left AND change the direction, example: MOV LEF 2</p>
+			<p>MOV RIG # : move the block to right AND change the direction, example: MOV RIG 2</p>
+			<p>MOV BOT # : move the block to bottom AND change the direction, example: MOV BOT 2</p>
+			<p>MOV TOP # : move the block to top AND change the direction, example: MOV TOP 2</p>
+			<p>BUILD : build a wall in front of the block, example: BUILD</p>
+			<p>BRU color : color the front wall with the color, example: BRU RED</p>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="../public.js"></script>
+	<script type="text/javascript" src="js/table.js"></script>
+	<script type="text/javascript" src="js/square.js"></script>
+	<script type="text/javascript" src="js/command.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
+
+
+
+

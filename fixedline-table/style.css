@@ -1,0 +1,57 @@
+body {
+	height: 2000px;
+}
+table {
+	margin: 100px auto;
+	border-spacing:0;
+	border-collapse: collapse;
+	font-size: 16px;
+	color: #999;
+}
+table td {
+	min-width: 100px;
+	height: 30px;
+	border: 1px solid #999;
+	text-align:center;
+	line-height: 30px;
+}
+
+.title{
+	background: #ccc;
+	color: #fff;
+}
+.title p{
+	padding-left: 16px;
+	display: inline-block;
+	margin: 0px;
+}
+.button-container{
+	display: inline-block;
+	padding-right: 10px;
+	float: right;
+	height: inherit;
+}
+
+.uptri{ 
+	display: block;
+	width:0px;  
+	height:0px;  
+	padding: 0px;
+	margin-bottom: 5px;
+	border-top:6px solid #ccc;  
+	border-left:6px solid #ccc;  
+	border-bottom:6px solid white;  
+	border-right:6px solid #ccc;  
+} 
+.downtri{  
+	display: block;
+	width:0px;  
+	height:0px;  
+	padding: 0px;
+	margin-top: 5px;
+	border-top:6px solid white;  
+	border-left:6px solid #ccc;  
+	border-bottom:6px solid #ccc;  
+	border-right:6px solid #ccc;  
+} 
+
