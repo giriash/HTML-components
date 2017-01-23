@@ -43,8 +43,8 @@ body{
     font-size: 16px;
     border-radius: 8px;
     outline: none;
-
 }
+
 .show-block label{
 	float: left;
     display: inline-block;
@@ -135,3 +135,14 @@ body{
 .control-block p{
 	text-align: center;
 }
+.submit-control-btn{
+	
+    width: 80px;
+    height: 30px;
+    background-color: rgb(59,153,252);
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    outline: none;
+ }
