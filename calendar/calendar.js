@@ -94,6 +94,7 @@ Calendar.prototype = {
 		for (var i = weekofFirstDay; i < 7; i++) {
 			var day = document.createElement('td');
 			day.innerHTML = date;
+			addEvent(day,'click',function(e){self.setDate(e.target.innerHTML);});
 			if(date == currentDate){day.className = 'currentDate';}
 			tr1.appendChild(day);
 			date++;
