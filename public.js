@@ -25,4 +25,3 @@ function removeChildrenNodes(ele){
         ele.removeChild(ele.firstChild);
     }
 }
-

@@ -1,1 +1,1 @@
-var calendar = new Calendar('#calendar');
+var calendar = new Calendar('#calendar','#calendar_input','#calendar_btn');

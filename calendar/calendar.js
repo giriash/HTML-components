@@ -5,12 +5,13 @@
 * @para {json} data
 * @para {array} courses
 */
-var Calendar = function(selector){
+var Calendar = function(selector, inputSelector, btnSelector){
 	this.calendar = document.querySelector(selector);
 	this.table = document.createElement('table');
 	this.date = new Date();
-	console.log(this.date);
-	this.init();
+	this.input = document.querySelector(inputSelector);
+	this.btn = document.querySelector(btnSelector);
+	this.calendarBtn(this.input, this.btn);
 }
 
 Calendar.prototype = {
@@ -21,7 +22,9 @@ Calendar.prototype = {
 	* initiate calendar header and table
 	*/
 	init : function(){
+		this.calendar.style.display = 'block';
 		var self = this;
+
 		//init title
 		var titleBox = document.createElement('div');
 			titleBox.className = 'title';
@@ -86,7 +89,8 @@ Calendar.prototype = {
 			day.innerHTML = dayofLastMonth - weekofFirstDay + 1 + i;
 			day.className = 'notCurrentMonth';
 			addEvent(day,'click',function(e){
-				self.gotoPreviousMonth();
+				self.gotoPreviousMonth(e.target.innerHTML);
+				self.calendar.style.display = 'none';
 			});
 			tr1.appendChild(day);
 		}
@@ -108,7 +112,10 @@ Calendar.prototype = {
 				if (date > lastDayinThisMonth) {
 					day.innerHTML = lasttr;
 					day.className = 'notCurrentMonth';
-					addEvent(day,'click',function(e){self.gotoNextMonth();});
+					addEvent(day,'click',function(e){
+						self.gotoNextMonth(e.target.innerHTML);
+						self.calendar.style.display = 'none';
+					});
 					lasttr++;
 				} else {
 					day.innerHTML = date;
@@ -125,6 +132,15 @@ Calendar.prototype = {
 	},
 
 	/*
+	* return current date
+	*
+	* @ return {Date}
+	*/
+	getDate : function(){
+		return this.date;
+	},
+	
+	/*
 	* set day by click
 	*
 	* @ para {string} day
@@ -132,21 +148,52 @@ Calendar.prototype = {
 	setDate : function(day){
 		this.date = new Date(this.date.getFullYear(),this.date.getMonth(),day);
 		this.init();
+		this.inputValue(this.date);
+		this.calendar.style.display = 'none';
 	},
 
 	/*
 	* go to previous month
+	*
+	* @ para {string} day
 	*/
-	gotoPreviousMonth : function(){
-		this.date = new Date(this.date.getFullYear(),this.date.getMonth()-1,this.date.getDate());
+	gotoPreviousMonth : function(date){
+		date = date == null ? this.date.getDate() : date;
+		this.date = new Date(this.date.getFullYear(),this.date.getMonth()-1,date);
 		this.init();
+		this.inputValue(this.date);
 	},
 
 	/*
 	* go to next month
+	*
+	* @ para {string} day
 	*/
-	gotoNextMonth : function(){
-		this.date = new Date(this.date.getFullYear(),this.date.getMonth() + 1,this.date.getDate());
+	gotoNextMonth : function(date){
+		date = date == null ? this.date.getDate() : date;
+		this.date = new Date(this.date.getFullYear(),this.date.getMonth() + 1,date);
 		this.init();
+		this.inputValue(this.date);
+	},
+
+	inputValue : function(date){
+		var month = date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1;
+		var day = date.getDate() + 1 < 10 ? '0' + date.getDate() : date.getDate(); 
+		this.input.value = month + '/' + day + '/' + date.getFullYear();
+	},
+
+	calendarBtn : function(inputEle, btnEle){
+		var self = this;
+		this.inputValue(self.date);
+		addEvent(inputEle, 'click', function(e){
+			self.init();
+			self.input.value = '';
+		});
+
+		addEvent(btnEle, 'click', function(e){
+			self.init();
+		});
 	}
+
+
 }
