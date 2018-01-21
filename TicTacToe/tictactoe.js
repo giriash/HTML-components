@@ -12,7 +12,7 @@ var tictactoe = function(selector, size){
 	this.input = document.querySelector(inputSelector);
 	this.btn = document.querySelector(btnSelector);
 	this.calendarBtn(this.input, this.btn);
-}
+};
 
 Calendar.prototype = {
 	

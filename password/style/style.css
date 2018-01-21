@@ -1,0 +1,51 @@
+body {
+	margin: 20px;
+}
+.block {
+	width: 300px;
+	height: auto;
+	position: relative;
+}
+
+.block:hover .password-container{
+	visibility: visible;
+}
+
+.image-container {
+	width: inherit;
+	height: auto;
+}
+
+.image-style {
+	width: inherit;
+	height: auto;
+}
+
+.password-container {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	flex-direction: column;
+	position: absolute;
+	width: inherit;
+	height: 100%;
+	top: 0px;
+	background-color: white;
+	opacity: 0.5;
+}
+
+.password-input {
+	height: 20px;
+	width: 200px;
+	border: 2px solid #000;
+	border-radius: 5px;
+	margin: 5px
+}
+
+.password-button {
+	margin: 5px;
+}
+
+.password-error-message {
+
+}
