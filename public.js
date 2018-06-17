@@ -26,7 +26,7 @@ function removeChildrenNodes(ele){
     }
 }
 
-//capitalize
+//capitalize string
 function capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
