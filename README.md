@@ -14,4 +14,6 @@
 
 6. [password component](password/home.html)
 
+6. [auto complete](auto-complete/index.html)
+
 

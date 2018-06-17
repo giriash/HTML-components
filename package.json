@@ -1,0 +1,23 @@
+{
+  "name": "HTML-components",
+  "version": "1.0.0",
+  "description": "1. [calendar component](calendar/index.html)",
+  "main": "jquery-2.2.3.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giriash/HTML-components.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giriash/HTML-components/issues"
+  },
+  "homepage": "https://github.com/giriash/HTML-components#readme",
+  "dependencies": {
+    "all-countries": "^2.0.2"
+  }
+}

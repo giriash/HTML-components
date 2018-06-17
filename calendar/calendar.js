@@ -2,8 +2,8 @@
 * construnctor
 *
 * @para {Dom} selector
-* @para {json} data
-* @para {array} courses
+* @para {Dom} inputSelector
+* @para {Dom} btnSelector
 */
 var Calendar = function(selector, inputSelector, btnSelector){
 	this.calendar = document.querySelector(selector);
