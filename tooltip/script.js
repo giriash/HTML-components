@@ -1,5 +1,5 @@
 var fruits = ['apple', 'banana', 'orange', 'peach'];
-var explanations = fruits.map(value => 'tooptip for ' + value);
+var explanations = fruits.map(value => value);
 var tooltipPositions = ['left', 'right', 'top', 'bottom'];
 var container = document.querySelector('.container');
 
@@ -11,13 +11,13 @@ function render(data) {
 		var target = document.createElement('div');
 			target.innerHTML = data[i];
 			target.className = 'block';
-		// var toolTip = document.createElement('div');
-		// 	toolTip.innerHTML = explanations[i];
-		// 	toolTip.className = 'tooltip';
-		var toolTip = new ToolTip(target, explanations[i], tooltipPositions[i]);
 		domContainer.appendChild(target);
-		domContainer.appendChild(toolTip);
+		this.addTooltip(target, explanations[i], tooltipPositions[i]);
 		container.appendChild(domContainer);
 	}
 
+}
+
+function addTooltip(target, explaination, position) {
+	return new ToolTip(target, explaination, position);
 }

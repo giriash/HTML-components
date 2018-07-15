@@ -15,9 +15,6 @@ var AutoComplete = function(selector, inputSelector, btnSelector, data){
 }
 
 AutoComplete.prototype = {
-	
-	MonthName : ['January', 'Feburary', 'March', 'April', 'May', 'June', 'July', 'August', 'Septemper', 'October', 'Novermber', 'December'],
-	WeekName : ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'], 
 	/*
 	* initiate calendar header and table
 	*/
@@ -129,20 +126,5 @@ AutoComplete.prototype = {
 			self.deleteOptions();
 		});
 		return option;
-	},
-
-	/*
-	* select option
-	*
-	* @ para {string}
-	*/
-	selectOption: function(option) {
-		var self = this;
-		self.input.value = option;
-		self.deleteOptions();
-	},
-
-	capitalize: function(str) {
-    	return str.charAt(0).toUpperCase() + str.slice(1);
 	}
 }

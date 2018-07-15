@@ -10,15 +10,19 @@ body {
 	width: 420px；
 }
 .block{
-	display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-around;
+	position: relative;
 	border: 1px solid #dedede;
 	border-radius: 2px;
 	color: #fff;
 	background: #dedede;
 	width: 80px;
 	height: 45px;
+	line-height: 45px;
+	margin: auto;
+	text-align: center;
 }
 
 .tooltip {
@@ -31,4 +35,68 @@ body {
 	color: #fff;
 	padding: 0px 4px;
 	display: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.left-tooltip {
+	right: 105%;
+	top: 25%;
+}
+
+.right-tooltip {
+	left: 105%;
+	top: 25%;
+}
+
+.top-tooltip {
+	bottom: 110%;
+}
+
+.bottom-tooltip {
+	top: 110%;
+}
+
+.left-tooltip::after {
+	content: "";
+	position: absolute;
+	left: calc(100% + 5px);
+	top: 25%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent transparent #aaa;
+}
+
+.right-tooltip::after {
+	content: "";
+	position: absolute;
+	right: 100%;
+	top: 25%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent #aaa transparent transparent;
+}
+
+.top-tooltip::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #aaa transparent transparent transparent;
+}
+
+.bottom-tooltip::after {
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent #aaa transparent;
 }
