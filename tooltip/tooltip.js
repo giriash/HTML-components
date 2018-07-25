@@ -11,7 +11,7 @@ var ToolTip = function(target, tooltipContent, position){
 	this.tooltipContent = tooltipContent;
 	this.position = position;
 	return this.init();
-}
+};
 
 ToolTip.prototype = {
 	/*
@@ -29,18 +29,16 @@ ToolTip.prototype = {
 
 	render: function() {
 		var self = this;
+		var positionClass = self.position + '-tooltip';
 		var toolTip = document.createElement('div');
 			toolTip.innerHTML = self.tooltipContent;
-			toolTip.className = 'tooltip';
+			toolTip.classList.add('tooltip', positionClass);
 		addEvent(self.target, "mouseover", function(e){
-			console.log('over');
 			toolTip.style.display = 'block';
 		});
 		addEvent(self.target, "mouseout", function(e){
-			console.log('out');
 			toolTip.style.display = 'none';
 		});
-		return toolTip;
+		self.target.appendChild(toolTip);
 	}
-
 }
