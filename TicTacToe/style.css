@@ -1,12 +1,12 @@
-.container{
-	display: none;
-	margin: 0px auto;
-	width: 420px;
-	border: 1px solid #eb7a77;
+.tictactoe-board{
+	margin: 100px auto;
+}
+.info {
+	text-align: center;
+	margin: 10px auto;
 }
 .title{
-	background-color: #eb7a77;
-	color: white;
+	color: #eb7a77;
 	height: 40px;
 	text-align: center;
 	line-height: 40px;
@@ -43,36 +43,23 @@
 	border-right:6px solid #eb7a77;  
 } 
 
-.container table{
-	width: 100%;
+.tictactoe-board table{
+	margin: 0px auto;
 	text-align: center;
 	border-spacing: 0;
 	border-collapse: none;
 	font-size: 18px;
+
 }
-.container table td{
-	height: 60px;
-	width: 60px;
-	/*border: 1px solid #eb7a77;*/
+.tictactoe-board table td{
+	height: 30px;
+	width: 30px;
+	border: 1px solid #eb7a77;
 }
-.container table tr td:first-child{
-	color: #eb7a77 ;
+.tictactoe-board table tr td:nth-child(odd){
+	background: #eee;
 }
-.container table tr td:last-child{
-	color: #eb7a77 ;
-}
-.notCurrentMonth{
-	color: #ccc !important;
-}
-.currentDate{
-	color: #fff !important;
-	background-color: #eb7a77;
-}
-img{
-	width: 24px;
-    height: 24px;
-    line-height: 20px;
-}
+
 input{
 	width: 150px;
 	height: 20px;
@@ -82,7 +69,7 @@ input{
     top: -8px;
     position: relative;
 }
-.input-container{
+.input-tictactoe-board{
 	margin: 100px auto;
     width: 200px;
     height: 24px;
