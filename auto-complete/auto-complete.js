@@ -22,11 +22,6 @@ AutoComplete.prototype = {
 		this.render();
 	},
 
-	// render : function(){
-	// 	// console.log('change: ', this.inputChange());
-	// 	// console.log('match: ', this.getMatches());
-	// },
-
 	/*
 	* DetectInputChange
 	*
