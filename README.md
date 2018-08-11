@@ -14,6 +14,10 @@
 
 6. [password component](password/home.html)
 
-6. [auto complete](auto-complete/index.html)
+7. [auto complete](auto-complete/index.html)
 
+8. [to do list complete](to-do-list/index.html)
 
+9. [tic tac toe](TicTacToe/index.html)
+
+10. [tooltip](tooltip/index.html)
