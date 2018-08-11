@@ -1,0 +1,48 @@
+.container {
+  width: 80%;
+}
+
+.input-section {
+  width: 100%;
+  margin: 10px auto 30px;
+  text-align: center;
+  
+}
+
+.list-section {
+  width: 60%;
+  margin: 10px auto;
+  text-align: left;
+  list-style: none;
+}
+
+.list-ele {
+    background: #efefef;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+.list-ele:nth-child(even) {
+  background: #dedede;
+}
+
+input:focus {
+    outline: none;
+ }
+
+.list-remove-btn {
+  cursor: pointer;
+}
+
+.alert-section {
+  display: none;
+  width: 60%;
+  margin: 0px auto;
+}
+
+.content-ele {
+  helght: 36px;
+  line-height: 36px;
+  padding: 0px 20px;
+}
